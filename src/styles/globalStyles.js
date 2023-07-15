@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     html {
-        font-size: 16px;
+        font-size: 10px;
     }
     body {
         font-family: 'Montserrat', sans-serif;

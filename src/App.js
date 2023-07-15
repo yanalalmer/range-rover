@@ -1,5 +1,9 @@
 import { GlobalStyles } from './styles/globalStyles';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Routes, Route } from 'react-router-dom';
+// pages
+import { Home, Model, History, Store, Dealerships } from './pages';
+// components
 
 function App() {
   return (
@@ -14,7 +18,13 @@ function App() {
       </Helmet>
       <GlobalStyles />
 
-      <div className='App'>this is my app now</div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/model' element={<Model />} />
+        <Route path='/history' element={<History />} />
+        <Route path='/store' element={<Store />} />
+        <Route path='/dealerships' element={<Dealerships />} />
+      </Routes>
     </HelmetProvider>
   );
 }

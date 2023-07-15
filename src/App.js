@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 // pages
 import { Home, Model, History, Store, Dealerships } from './pages';
 // components
+import { Navbar } from './components';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <title>Range Rover</title>
       </Helmet>
       <GlobalStyles />
-
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/model' element={<Model />} />

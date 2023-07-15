@@ -2,22 +2,22 @@ export const navList = [
   {
     key: 1,
     name: 'models',
-    link: '#models',
+    link: '/models',
   },
   {
     key: 2,
-    name: 'custom solutions',
-    link: '#custom-solutions',
+    name: 'history',
+    link: '/history',
   },
   {
     key: 3,
-    name: 'ownership',
-    link: '#ownership',
+    name: 'store',
+    link: '/store',
   },
   {
     key: 4,
-    name: 'history',
-    link: '#history',
+    name: 'dealerships',
+    link: '/dealerships',
   },
 ];
 

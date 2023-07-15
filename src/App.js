@@ -2,7 +2,7 @@ import { GlobalStyles } from './styles/globalStyles';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Routes, Route } from 'react-router-dom';
 // pages
-import { Home, Model, History, Store, Dealerships } from './pages';
+import { Home, Models, History, Store, Dealerships } from './pages';
 // components
 import { Navbar } from './components';
 
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/model' element={<Model />} />
+        <Route path='/models' element={<Models />} />
         <Route path='/history' element={<History />} />
         <Route path='/store' element={<Store />} />
         <Route path='/dealerships' element={<Dealerships />} />

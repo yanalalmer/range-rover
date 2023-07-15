@@ -5,6 +5,8 @@ import logo from '../../assets/logo/logo.png';
 import { navList, navButtons } from './navData';
 // components
 import NavMask from './NavMask';
+import Hamburger from './Hamburger';
+import HamburgerMenu from './HamburgerMenu';
 // styles
 import {
   SNav,
@@ -17,13 +19,11 @@ import {
   SNavListLink,
   SNavListSpan,
   SNavButton,
-  SNavBurgerBtn,
-  SNavBurgerBtnMenu,
 } from './styles';
 
 const Navbar = () => {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false);
-  const handleCLick = () => {
+  const handleClick = () => {
     setMenuIsOpen(!menuIsOpen);
   };
   return (
@@ -47,13 +47,11 @@ const Navbar = () => {
           {navButtons.map((button) => (
             <SNavButton key={button.key}>{button.svg}</SNavButton>
           ))}
-          <SNavBurgerBtn onClick={handleCLick}>
-            <SNavBurgerBtnMenu open={menuIsOpen} />
-          </SNavBurgerBtn>
+          <Hamburger open={menuIsOpen} handleClick={handleClick} />
         </SNavList>
         <NavMask open={menuIsOpen} />
+        <HamburgerMenu open={menuIsOpen} />
       </SNavContainer>
-      {/* <HamburgerMenu open={menuIsOpen} /> */}
     </SNav>
   );
 };

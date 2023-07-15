@@ -65,3 +65,52 @@ export const navButtons = [
     ),
   },
 ];
+
+export const hamburgerList = [
+  [
+    {
+      key: 1,
+      name: 'design',
+      href: '#design',
+    },
+    {
+      key: 2,
+      name: 'innovation',
+      href: '#innovation',
+    },
+    {
+      key: 3,
+      name: 'sustainability',
+      href: '#sustainability',
+    },
+  ],
+  [
+    {
+      key: 4,
+      name: 'driving',
+      href: '#driving',
+    },
+    {
+      key: 5,
+      name: 'lounge',
+      href: '#lounge',
+    },
+    {
+      key: 6,
+      name: 'club',
+      href: '#club',
+    },
+  ],
+  [
+    {
+      key: 7,
+      name: 'history',
+      href: '#history',
+    },
+    {
+      key: 8,
+      name: 'news',
+      href: '#news',
+    },
+  ],
+];

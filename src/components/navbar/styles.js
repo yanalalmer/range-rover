@@ -136,3 +136,18 @@ export const SNavBurgerBtnMenu = styled.div`
       open ? 'rotate(-45deg) translate(35px, 35px)' : 'translateY(0.6rem)'};
   }
 `;
+export const SNavMask = styled.div`
+  position: absolute;
+  right: 4.8%;
+  width: 100%;
+  height: 100%;
+  padding: 1.6rem 6rem;
+  background-color: ${variables.colors.grey};
+  opacity: ${({ open }) => (open ? '0.7' : '0')};
+  visibility: ${({ open }) => (open ? 'visible' : 'hidden')};
+  z-index: 10;
+  transition: opacity 0.3s ease-out 0s, visibility 0.3s ease-out 0s;
+  @media ${variables.query.md} {
+    right: 9%;
+  }
+`;

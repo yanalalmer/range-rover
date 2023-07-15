@@ -50,3 +50,7 @@ export const typography = {
   fontWeightSemiBold: '600',
   fontWeightBold: '800',
 };
+export const colors = {
+  grey: '#27282C',
+  white: '#fff',
+};

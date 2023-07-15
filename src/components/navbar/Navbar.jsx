@@ -3,6 +3,8 @@ import React from 'react';
 import logo from '../../assets/logo/logo.png';
 // data
 import { navList, navButtons } from './navData';
+// components
+import NavMask from './NavMask';
 // styles
 import {
   SNav,
@@ -49,7 +51,7 @@ const Navbar = () => {
             <SNavBurgerBtnMenu open={menuIsOpen} />
           </SNavBurgerBtn>
         </SNavList>
-        {/* <NavMask open={menuIsOpen} /> */}
+        <NavMask open={menuIsOpen} />
       </SNavContainer>
       {/* <HamburgerMenu open={menuIsOpen} /> */}
     </SNav>

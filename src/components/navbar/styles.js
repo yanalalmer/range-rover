@@ -46,6 +46,11 @@ export const SNavLogoImg = styled.img`
 export const SNavList = styled.ul`
   height: fit-content;
   display: flex;
+  :not(.middle-menu) {
+    @media ${variables.query.lg} {
+      display: none;
+    }
+  }
   &.middle-menu {
     margin-left: auto;
   }

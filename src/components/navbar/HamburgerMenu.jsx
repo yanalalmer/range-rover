@@ -1,15 +1,6 @@
 import React from 'react';
 // data
-import { hamburgerList } from './navData';
-// icons
-import {
-  Facebook,
-  Instagram,
-  Youtube,
-  Twitter,
-  Linkedin,
-  Tiktok,
-} from '@styled-icons/boxicons-logos';
+import { hamburgerList, smIcons } from './navData';
 // styles
 import {
   SHamburgerContainer,
@@ -46,24 +37,11 @@ const HamburgerMenu = ({ open }) => {
           <SHamburgerSocial>
             <SHamburgerSocialTitle>social</SHamburgerSocialTitle>
             <SHamburgerSocialIcons>
-              <SHamburgerSocialIconLink>
-                <Facebook viewBox='0 0 35 35' />
-              </SHamburgerSocialIconLink>
-              <SHamburgerSocialIconLink>
-                <Instagram viewBox='0 0 35 35' />
-              </SHamburgerSocialIconLink>
-              <SHamburgerSocialIconLink>
-                <Linkedin viewBox='0 0 35 35' />
-              </SHamburgerSocialIconLink>
-              <SHamburgerSocialIconLink>
-                <Youtube viewBox='0 0 35 35' />
-              </SHamburgerSocialIconLink>
-              <SHamburgerSocialIconLink>
-                <Twitter viewBox='0 0 35 35' />
-              </SHamburgerSocialIconLink>
-              <SHamburgerSocialIconLink>
-                <Tiktok viewBox='0 0 35 35' />
-              </SHamburgerSocialIconLink>
+              {smIcons.map((icon, index) => (
+                <SHamburgerSocialIconLink key={index} href={icon.href}>
+                  {icon.icon}
+                </SHamburgerSocialIconLink>
+              ))}
             </SHamburgerSocialIcons>
           </SHamburgerSocial>
         </SHamburgerFooter>

@@ -165,6 +165,7 @@ export const SHamburgerContainer = styled.div`
   transition: all 0.5s ease-out 0s;
   @media ${variables.query.lg} {
     height: ${({ open }) => (open ? '1024px' : '0px')};
+    top: 60px;
   }
 `;
 export const SHamburgerContent = styled.div`

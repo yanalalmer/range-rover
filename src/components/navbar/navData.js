@@ -1,3 +1,13 @@
+// icons
+import {
+  Facebook,
+  Instagram,
+  Youtube,
+  Twitter,
+  Linkedin,
+  Tiktok,
+} from '@styled-icons/boxicons-logos';
+
 export const navList = [
   {
     key: 1,
@@ -113,4 +123,31 @@ export const hamburgerList = [
       href: '#news',
     },
   ],
+];
+
+export const smIcons = [
+  {
+    icon: <Facebook viewBox='0 0 35 35' />,
+    href: '#',
+  },
+  {
+    icon: <Instagram viewBox='0 0 35 35' />,
+    href: '#',
+  },
+  {
+    icon: <Linkedin viewBox='0 0 35 35' />,
+    href: '#',
+  },
+  {
+    icon: <Youtube viewBox='0 0 35 35' />,
+    href: '#',
+  },
+  {
+    icon: <Twitter viewBox='0 0 35 35' />,
+    href: '#',
+  },
+  {
+    icon: <Tiktok viewBox='0 0 35 35' />,
+    href: '#',
+  },
 ];

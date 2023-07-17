@@ -1,9 +1,14 @@
 import React from 'react';
 // components
-import { Hero } from '../components';
+import { Hero, Slider } from '../components';
 
 const Home = () => {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <Slider />
+    </>
+  );
 };
 
 export default Home;

@@ -1,6 +1,6 @@
 import React from 'react';
 import heroVideo from '../../assets/video/hero-edited.mp4';
-import { motion, cubicBezier } from 'framer-motion';
+import { motion } from 'framer-motion';
 // styles
 import {
   SHeroSection,
@@ -14,7 +14,7 @@ import {
   SHeroVideoWrapper,
   SHeroVideo,
 } from './styles';
-const customEasing = cubicBezier(0.83, 0.67);
+
 const Hero = () => {
   return (
     <SHeroSection>

@@ -62,6 +62,7 @@ export const SHeroTitleSlider = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: 50vh 0 0;
   }
 `;
 export const SHeroSubtitle = styled.h3`

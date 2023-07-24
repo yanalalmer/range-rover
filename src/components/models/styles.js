@@ -7,6 +7,7 @@ export const SSlider = styled.div`
   position: relative;
 `;
 export const SSlides = styled.div`
+  background-color: black;
   display: flex;
   justify-content: center;
   height: 100%;
@@ -17,15 +18,15 @@ export const SSlide = styled.div`
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
+  filter: opacity(0.3);
   :last-child {
     flex: 2;
+    filter: none;
   }
   img {
     height: 100%;
   }
 `;
-export const SSkew = styled.div``;
-export const SSkewFix = styled.div``;
 export const SSlideContent = styled.div`
   z-index: 5;
   display: flex;

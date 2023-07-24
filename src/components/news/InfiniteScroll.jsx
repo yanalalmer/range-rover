@@ -1,4 +1,6 @@
 import React from 'react';
+// components
+import { Button } from '../../components';
 // data
 import { articles } from './data';
 // styles
@@ -13,7 +15,6 @@ import {
   SInfiniteScrollContent,
   SInfiniteScrollDate,
   SInfiniteScrollName,
-  SInfiniteScrollReadMore,
 } from './styles';
 
 const InfiniteScroll = () => {
@@ -30,7 +31,7 @@ const InfiniteScroll = () => {
                 <SInfiniteScrollContent>
                   <SInfiniteScrollDate>{article.date}</SInfiniteScrollDate>
                   <SInfiniteScrollName>{article.name}</SInfiniteScrollName>
-                  <SInfiniteScrollReadMore>read more</SInfiniteScrollReadMore>
+                  <Button content='read more' />
                 </SInfiniteScrollContent>
               </SInfiniteScrollContentWrapper>
             </SInfiniteScrollRow>

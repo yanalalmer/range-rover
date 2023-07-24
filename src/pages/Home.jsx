@@ -1,12 +1,13 @@
 import React from 'react';
 // components
-import { Hero, Models } from '../components';
+import { Hero, Models, News } from '../components';
 
 const Home = () => {
   return (
     <>
       <Hero />
       <Models />
+      <News />
     </>
   );
 };

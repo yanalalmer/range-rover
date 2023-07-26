@@ -4,3 +4,5 @@ export { default as Models } from './models/Models';
 export { default as News } from './news/News';
 export { default as Button } from './button/Button';
 export { default as DealerLocator } from './dealer-locator/DealerLocator';
+
+export { default as Footer } from './footer/Footer';

@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 // pages
 import { Home, Models, History, Store, Dealerships } from './pages';
 // components
-import { Navbar } from './components';
+import { Navbar, Footer } from './components';
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
         <Route path='/store' element={<Store />} />
         <Route path='/dealerships' element={<Dealerships />} />
       </Routes>
+      <Footer />
     </HelmetProvider>
   );
 }

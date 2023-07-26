@@ -16,8 +16,11 @@ export const SButton = styled.a`
   font-stretch: normal;
   line-height: 1.31;
   letter-spacing: 0.064rem;
-  color: #202020;
-  border: 1px solid #cbcbca;
+  color: ${({ negative }) =>
+    negative ? variables.colors.white : variables.colors.grey};
+
+  border: 1px solid
+    ${({ negative }) => (negative ? variables.colors.white : '#cbcbca')};
   display: inline-block;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;

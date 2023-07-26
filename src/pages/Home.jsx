@@ -1,6 +1,6 @@
 import React from 'react';
 // components
-import { Hero, Models, News } from '../components';
+import { Hero, Models, News, DealerLocator } from '../components';
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <Hero />
       <Models />
       <News />
+      <DealerLocator />
     </>
   );
 };
